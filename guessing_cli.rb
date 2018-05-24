@@ -27,10 +27,10 @@ def run_guessing_game
     if guess == "exit"
       puts "Goodbye!"
       break
-    elsif guess.to_i == computer_number
+    elsif user.to_i == comp
       puts "You guessed the correct number!"
-    elsif guess.to_i != computer_number
-      puts "The computer guessed #{computer_number}."
+    elsif user.to_i != comp
+      puts "The computer guessed #{comp}."
     else
       puts "Invalid input"
     end
