@@ -5,7 +5,7 @@ def run_guessing_game
   loop do 
     puts "Guess a number between 1 and 6."
     user = gets.chomp
-    comp = (1..6).to_a.sample
+    comp = rand(1..6)
     
     if user == "exit"
       break
